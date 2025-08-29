@@ -13,6 +13,7 @@
 swiper-wrapper {
     width: 80%;
 }
+
 .swiper-slide img {
     width: 130%;
 }
@@ -20,6 +21,12 @@ swiper-wrapper {
 .swiper-button-prev,
 .swiper-button-next {
     display: none;
+    pointer-events: none;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    pointer-events: auto;
 }
 
 .swiper-pagination {
@@ -86,6 +93,7 @@ swiper-wrapper {
 }
 
 
+
 @media screen and (min-width: 1024px) {
 
     .swiper {
@@ -136,7 +144,7 @@ swiper-wrapper {
 
     .swiper-button-prev,
     .swiper-button-next {
-        display: none;
+        display: block;
     }
 
     .carrossel__titulo {
@@ -166,25 +174,31 @@ swiper-wrapper {
         margin: 1em 0;
     }
 
-    .prev__terceiro,
-    .next__terceiro {
-        display: flex;
-        width: 30%;
+    .prev__principal,
+    .next__principal {
+        width: 50%;
         top: 65%;
     }
 
-    .prev__terceiro {
-        left: -125px;
+    .prev__secundario,
+    .next__secundario {
+        top: 65%;
+    }
+
+    .prev__principal,
+    .prev__secundario {
+        left: 130px;
 
     }
 
-    .next__terceiro {
-        left: 625px;
+    .next__principal,
+    .next__secundario {
+        left: 870px;
     }
 
     .card {
         margin: 2em 3em 0 5em;
-        transition: tranform 0.5s ease-in-out;
+        transition: tranform 0.5s ease;
     }
 
     .card:hover {

@@ -145,6 +145,18 @@
         color: var(--branco);
     }
 
+    .lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .lista-menu__item:hover>.lista-menu__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
+    }
+
+    .opcoes__item-imagem {
+        display: none;
+    }
 
 }
 
@@ -185,16 +197,18 @@
     }
 
     .opcoes__item {
+        display: flex;
         position: relative;
         margin-left: 3em;
+        align-items: center;
     }
 
     .opcoes__item:hover {
-        background-color: var(--laranja);
+        background: var(--azul-degrade);
         -webkit-text-fill-color: var(--branco);
         font-weight: 700;
     }
-    
+
     .lista-menu {
         position: absolute;
         left: 290px;
@@ -212,6 +226,12 @@
     .lista-menu__item:hover>.lista-menu__link {
         -webkit-text-fill-color: var(--branco);
         text-decoration: none;
+    }
+
+    .opcoes__item-imagem {
+        display: flex;
+        width: 30px;
+        transform: translateX(-5px);
     }
 
 }
