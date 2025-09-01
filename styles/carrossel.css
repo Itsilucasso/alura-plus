@@ -43,7 +43,7 @@ swiper-wrapper {
 }
 
 .card__descricao {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
 }
 
@@ -133,6 +133,7 @@ swiper-wrapper {
         width: 100%;
     }
 }
+
 
 
 @media screen and (min-width: 1728px) {
@@ -225,7 +226,7 @@ swiper-wrapper {
 
     .botoes__ancora:hover {
         color: var(--laranja);
-        background-color: var(--cinza-claro);
+        background-color: var(--cor-de-fundo-claro);
     }
 
 }
